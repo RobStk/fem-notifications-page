@@ -9,4 +9,5 @@ $weights: (
     x-bold: 800,
 );
 
-$paragraph: 16px map-get($weights, medium) map-get($families, main);
+$main: map-get($weights, medium) 16px map-get($families, main);
+$paragraph: map-get($weights, medium) 16px map-get($families, main);

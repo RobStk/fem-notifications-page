@@ -1,0 +1,11 @@
+@use '../configs/colors';
+@use '../configs/fonts';
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr max-content;
+
+    font: fonts.$main;
+    color: colors.$neutral-dark-grayish-blue;
+}
