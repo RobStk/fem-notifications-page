@@ -11,3 +11,4 @@ $weights: (
 
 $main: map-get($weights, medium) 16px map-get($families, main);
 $paragraph: map-get($weights, medium) 16px map-get($families, main);
+$paragraph-bold: map-get($weights, x-bold) 16px map-get($families, main);

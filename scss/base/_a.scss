@@ -1,0 +1,12 @@
+@use '../configs/colors';
+@use '../configs/fonts';
+
+a {
+    color: colors.$neutral-very-dark-blue;
+    font-weight: map-get(fonts.$weights, x-bold );
+    text-decoration: none;
+
+    &:hover {
+        color: colors.$primary-blue;
+    }
+}

@@ -1,9 +1,10 @@
 .notifications-page {
-    padding: 1rem;
+    padding: 1.2rem 1rem;
+    font-size: 0.9rem;
 
     &__header {
         width: 100%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.4rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -24,6 +25,6 @@
     &__content {
         display: flex;
         flex-direction: column;
-        row-gap: 0.8rem;
+        row-gap: 0.7rem;
     }
 }

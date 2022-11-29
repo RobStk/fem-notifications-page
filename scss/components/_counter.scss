@@ -1,0 +1,11 @@
+@use '../configs/fonts';
+@use '../configs/colors';
+
+.counter {
+    padding: 0.3em 0.7em;
+    border-radius: 5px;
+    line-height: 1;
+    font-weight: map-get(fonts.$weights, x-bold );
+    color: colors.$neutral-light-grayish-blue-1;
+    background-color: colors.$primary-blue;
+}

@@ -1,0 +1,13 @@
+@use '../configs/colors';
+
+.text-button {
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+
+    &:hover {
+        color: colors.$primary-blue;
+    }
+}

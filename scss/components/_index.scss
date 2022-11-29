@@ -1,1 +1,4 @@
-@forward 'attribution';
+@forward 'attribution' as attribution-*;
+@forward 'counter' as counter-*;
+@forward 'notification' as notification-*;
+@forward 'text-button' as text-button-*;

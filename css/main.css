@@ -21,6 +21,20 @@ body {
   color: hsl(219deg, 12%, 42%);
 }
 
+a {
+  color: hsl(224deg, 21%, 14%);
+  font-weight: 800;
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+h1 {
+  font-size: 22px;
+  color: hsl(224deg, 21%, 14%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -29,12 +43,98 @@ body {
   color: hsl(228deg, 45%, 44%);
 }
 
-.notifications-page {
+.counter {
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  line-height: 1;
+  font-weight: 800;
+  color: hsl(211deg, 68%, 94%);
+  background-color: hsl(219deg, 85%, 26%);
+}
+
+.notification {
   padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+.notification img {
+  height: 2.4em;
+}
+.notification .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+.notification .msg-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.2em;
+}
+.notification .time {
+  color: hsl(219deg, 14%, 63%);
+}
+.notification .attachments {
+  display: flex;
+  align-items: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.notification .attachments:hover {
+  background-color: hsl(205deg, 33%, 90%);
+}
+.notification .attachments img {
+  height: 2.3rem;
+}
+.notification .private-msg {
+  border: 1px solid hsl(205deg, 33%, 90%);
+  padding: 1rem;
+  cursor: pointer;
+}
+.notification .private-msg:hover {
+  background-color: hsl(205deg, 33%, 90%);
+}
+.notification.unread {
+  background-color: hsl(210deg, 60%, 98%);
+}
+.notification.unread .msg {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.notification.unread .msg p:first-child:after {
+  content: "";
+  margin: 0.1em 0.5em;
+  display: inline-block;
+  height: 0.52em;
+  width: 0.52em;
+  border-radius: 50%;
+  background-color: hsl(1deg, 90%, 64%);
+}
+
+.text-button {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.text-button:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.notifications-page {
+  padding: 1.2rem 1rem;
+  font-size: 0.9rem;
 }
 .notifications-page__header {
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -53,5 +153,5 @@ body {
 .notifications-page__content {
   display: flex;
   flex-direction: column;
-  row-gap: 0.8rem;
+  row-gap: 0.7rem;
 }
