@@ -5,7 +5,10 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr max-content;
+    place-items: center;
 
     font: fonts.$main;
     color: colors.$neutral-dark-grayish-blue;
+
+    background-color: colors.$neutral-very-light-grayish-blue;
 }
