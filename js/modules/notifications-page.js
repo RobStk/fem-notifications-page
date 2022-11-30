@@ -23,8 +23,11 @@ export default class NotificationsPage {
     /* ---------------------------------------------------- */
     #clearUnreadMsgs() {
         const unreadMsgs = this.#mainElement.querySelectorAll('.notification.unread');
+        const unreadMsgsCounter = this.#mainElement.querySelector('.counter');
+
         for (const msg of unreadMsgs) {
             msg.classList.remove('unread');
         }
+        unreadMsgsCounter.textContent = '0';
     }
 }
