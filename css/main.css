@@ -24,12 +24,15 @@ body {
 }
 
 a {
-  color: hsl(224deg, 21%, 14%);
+  color: inherit;
   font-weight: 800;
   text-decoration: none;
 }
 a:hover {
   color: hsl(219deg, 85%, 26%);
+}
+a.user-name {
+  color: hsl(224deg, 21%, 14%);
 }
 
 h1 {

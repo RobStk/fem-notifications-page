@@ -2,11 +2,15 @@
 @use '../configs/fonts';
 
 a {
-    color: colors.$neutral-very-dark-blue;
+    color: inherit;
     font-weight: map-get(fonts.$weights, x-bold );
     text-decoration: none;
 
     &:hover {
         color: colors.$primary-blue;
+    }
+
+    &.user-name {
+        color: colors.$neutral-very-dark-blue;
     }
 }
