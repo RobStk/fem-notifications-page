@@ -39,9 +39,12 @@
         font-size: unset;
         padding: 2rem;
 
+        &__header {
+            margin-bottom: 1.9em;
+        }
+
         h1 {
             font-size: 24px;
-            margin-bottom: 0.5em;
         }
 
         img {

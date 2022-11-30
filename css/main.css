@@ -171,9 +171,11 @@ h1 {
     font-size: unset;
     padding: 2rem;
   }
+  .notifications-page__header {
+    margin-bottom: 1.9em;
+  }
   .notifications-page h1 {
     font-size: 24px;
-    margin-bottom: 0.5em;
   }
   .notifications-page img {
     height: 2.8rem;
